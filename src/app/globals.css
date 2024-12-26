@@ -1,15 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "aos/dist/aos.css";
+
+.nav-bar-clip {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
+}
+
+.nav-bar-button-clip {
+  clip-path: polygon(0 0, 78% 0, 100% 100%, 12% 100%);
+}
+
+.hero-clip {
+  clip-path: polygon(0 0, 78% 6%, 100% 92%, 0 100%);
+}
+
+.box1 {
+  clip-path: polygon(0 0, 71% 7%, 100% 90%, 0 100%);
+}
+
+.sponsor-clip {
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+}
+
+.phone-menu-clip {
+  clip-path: polygon(3% 3%, 91% 0, 100% 93%, 10% 94%);
+}
+
+:root {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --tertiary: #ffffff;
+}
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
