@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image"; // Import Image from next/image
-import { FloatingNav } from "@/components/ui/floating-navbar";
+import { FloatingNav } from "../components/ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import Header from "../components/header";
 import { ContainerScroll } from "../components/ui/container-scroll-animation";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
-import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/stars-background";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import { ShootingStars } from "../components/ui/shooting-stars";
+import { StarsBackground } from "../components/ui/stars-background";
+import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 import Footer from "../components/footer";
 export default function Home() {

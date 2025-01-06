@@ -6,7 +6,7 @@ import CloseFillIcon from "remixicon-react/CloseFillIcon";
 import Menu3FillIcon from "remixicon-react/Menu3FillIcon";
 import AOS from "aos";
 import { useRouter } from "next/navigation";
-import { useMenuContext } from "@/context/MenuContext";
+import { useMenuContext } from "../context/MenuContext";
 
 
 export default function Header() {
