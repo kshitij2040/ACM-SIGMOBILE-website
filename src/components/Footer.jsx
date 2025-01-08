@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image"
 import FacebookBoxFillIcon from "remixicon-react/FacebookBoxFillIcon"
 import InstagramFillIcon from "remixicon-react/InstagramFillIcon"
@@ -28,46 +29,38 @@ export default function Footer(){
               Social Media
             </div>
             <div className="flex gap-5 m-4">
-              <FacebookBoxFillIcon
-                size={50}
-                className="hover:fill-red hover:cursor-pointer"
-                onClick={() => window.open("https://www.facebook.com//")}
-              />
-              <LinkedinBoxFillIcon
-                size={50}
-                className="hover:fill-red hover:cursor-pointer"
-                onClick={() => window.open("https://in.linkedin.com/company//")}
-              />
-              <InstagramFillIcon
-                size={50}
-                className="hover:fill-red hover:cursor-pointer"
-                onClick={() => window.open("https://www.instagram.com//")}
-              />
-              <YoutubeFillIcon
-                size={50}
-                className="hover:fill-red hover:cursor-pointer"
-                onClick={() => window.open("https://www.youtube.com/channel/")}
-              />
-            </div>
+  {/* Facebook Icon */}
+  <FacebookBoxFillIcon
+    size={50}
+    className="hover:fill-blue-600 hover:cursor-pointer"
+    onClick={() => window.open("https://www.facebook.com/")}
+  />
+  
+  {/* LinkedIn Icon */}
+  <LinkedinBoxFillIcon
+    size={50}
+    className="hover:fill-blue-700 hover:cursor-pointer"
+    onClick={() => window.open("https://in.linkedin.com/company/")}
+  />
+  
+  {/* Instagram Icon */}
+  <InstagramFillIcon
+    size={50}
+    className="hover:fill-pink-500 hover:cursor-pointer"
+    onClick={() => window.open("https://www.instagram.com/")}
+  />
+  
+  {/* YouTube Icon */}
+  <YoutubeFillIcon
+    size={50}
+    className="hover:fill-red-600 hover:cursor-pointer"
+    onClick={() => window.open("https://www.youtube.com/channel/")}
+  />
+</div>
+
+            
           </div>
-          <div className="flex gap-2">
-            {/* <Image
-              src={"/logo_gif.gif"}
-              alt="logo"
-              width={150}
-              height={150}
-              className="md:w-44 md:h-44"
-              unoptimized
-            ></Image>
-            <Image
-              src={"/collegelogo.png"}
-              alt="logo"
-              width={150}
-              height={150}
-              className="md:w-44 md:h-44"
-              unoptimized
-            ></Image> */}
-          </div>
+       
         </div>
       </section>
     )
